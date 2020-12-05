@@ -1,4 +1,4 @@
-const { TooManyRequests } = require('http-errors');
+// const { TooManyRequests } = require('http-errors');
 const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
@@ -10,7 +10,7 @@ const commentSchema = new Schema({
         type: Number,
         min: 1,
         max: 5,
-        required:true
+        required: true
     },
     text: {
         type: String,
